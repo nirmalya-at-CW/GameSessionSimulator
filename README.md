@@ -24,6 +24,11 @@ is sufficient.
 
 *   checkout from github
 *   move to the project folder, where it has been checked out
- 
+*   make sure that **src/test/resources/application.conf** has the following entries properly filled in
+ GameSession.availableAt.host, and
+ GameSession.availableAt.port
+    are initialized properly to point to an instance of a running GameSessionRecorderService
+
+
 *   fire command at $ prompt: sbt <enter>
-*   at the _sbt_ prompt, fire command: gatling test <enter>
+*   at the _sbt_ prompt, fire command: gatling:test <enter>

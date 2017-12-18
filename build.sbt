@@ -2,10 +2,11 @@
 lazy val root = project
   .in(file("."))
   .settings(
-    name := "GameSessionLoadDriver",
+    name := "GameSessionSimulator",
     scalaVersion := "2.11.11",
     version := "0.1.0-SNAPSHOT",
     libraryDependencies ++= Seq(
+      "com.typesafe" % "config" % "1.3.1",
       "io.gatling.highcharts" % "gatling-charts-highcharts" % "2.2.2" ,
       "io.gatling"            % "gatling-test-framework"    % "2.2.2",
       "org.json4s" % "json4s-native_2.11" % "3.5.2",
